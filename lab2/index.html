@@ -8,34 +8,44 @@
     <meta name="author" content="Kateryna Hlebova" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" media="all" rel="stylesheet" href="css/main.css" />
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jscolor.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <div class="container">
+    
       <div class="header">
         <a href="index.html" class="brand-name">
           <div id="brand">HedoEditor</div>
         </a>
       </div>
+    
       <div class="main">
+    
         <div class="left-column">
           <div id="content">
             <div id="options">
-              <button id="bold"><b>B</b></button>
-              <button id="italic"><em>I</em></button>
-              <button id="underlined"><u>U</u></button>
-              <button id="color">Colour</button>
-              <button id="case">Case</button>
+              <button id="bold_btn" onclick="bold()"><b>B</b></button>
+              <button id="italic_btn" onclick="italic()"><em>I</em></button>
+              <button id="underlined_btn" onclick="underlined()"><u>U</u></button>
+              <button id="uppercase_btn" onclick="uppercase()">A</button>
+              <button id="lowercase_btn" onclick="lowercase()">a</button>
+              <button id="color" class="jscolor {value:'7c6c6d', valueElement:null}"></button> 
+              <button id="color_btn" onclick="color()">Color</button>
             </div>
             <div id="text-input">
               <textarea id="text-edit"></textarea>
-              <input type="button" value="Show text" />
+              <button id="show" onclick="show()">Show result</button>
             </div>
           </div>
         </div>
+    
         <div class="right-column">
           <div id="side">
-            <div id="text-view"></div>
+            <div id="text-window">
+              <div id="result">Result</div>
+              <div id="text-view"></div>
+            </div>
           </div>
           <div class="footer">
             <div class="footer-text">
@@ -44,9 +54,8 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    <script src="jscolor.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
