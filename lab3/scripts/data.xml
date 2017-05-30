@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE files [
+<!ELEMENT files (file)>
+<!ELEMENT file (name , content)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+]>
+<files>
+	
+	<file>
+		<name>Bye</name>
+		<content>Bye everyone</content>
+	</file>
+<file><name>sdfghm</name><content>sdn</content></file><file><name>srtk</name><content>sdfghjgfhghj</content></file><file><name>fgfhgjh</name><content>dfgh</content></file></files>
